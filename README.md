@@ -8,6 +8,8 @@ The css part is managed by scss files (mainly for nesting). This project goal wa
 
 The technologies I implemented in this project: React, JSX, Reach Router, Formik, Yup, CSS Grid/Flexbox, Sass.
 
+Website demo - https://jovial-yalow-8fa2f8.netlify.app/
+
 ## Getting Started
 
 Download the project files and install the project dependencies:
