@@ -1,0 +1,161 @@
+.Customers {
+  position: relative;
+  height: 632px;
+  background-color: var(--color-secondary-sacramento-green);
+  overflow: hidden;
+  text-align: center;
+
+  .pattern {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+  }
+
+  .headline {
+    font-size: 32px;
+    line-height: 32px;
+    font-weight: 700;
+    color: var(--color-primary-white);
+    min-width: 300px;
+
+    position: absolute;
+    top: 88px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .container {
+    height: 360px;
+    width: 162.21px;
+
+    position: absolute;
+    top: 184px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    .verge {
+      height: 24.19px;
+      width: 146.56px;
+    }
+
+    .jakarta {
+      height: 19.92px;
+      width: 162.21px;
+    }
+
+    .guardian {
+      height: 24.19px;
+      width: 159.37px;
+    }
+
+    .techRadar {
+      height: 24.19px;
+      width: 146.56px;
+    }
+
+    .gadgetsNow {
+      height: 39.84px;
+      width: 86.8px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .Customers {
+    height: 308px;
+
+    .headline {
+      top: 100px;
+    }
+
+    .container {
+      height: 28px;
+      width: 689px;
+
+      top: 180px;
+
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+
+      .verge {
+        height: 17px;
+        width: 103px;
+      }
+
+      .jakarta {
+        height: 14px;
+        width: 114px;
+      }
+
+      .guardian {
+        height: 17px;
+        width: 112px;
+      }
+
+      .techRadar {
+        height: 17px;
+        width: 103px;
+      }
+
+      .gadgetsNow {
+        height: 28px;
+        width: 61px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .Customers {
+    height: 437px;
+
+    .pattern {
+      transform: none;
+    }
+
+    .headline {
+      font-size: 48px;
+      line-height: 48px;
+      top: 140px;
+    }
+
+    .container {
+      height: 45px;
+      width: 1110px;
+
+      top: 252px;
+
+      .verge {
+        height: 28px;
+        width: 165px;
+      }
+
+      .jakarta {
+        height: 23px;
+        width: 184px;
+      }
+
+      .guardian {
+        height: 28px;
+        width: 180px;
+      }
+
+      .techRadar {
+        height: 28px;
+        width: 165px;
+      }
+
+      .gadgetsNow {
+        height: 45px;
+        width: 98px;
+      }
+    }
+  }
+}

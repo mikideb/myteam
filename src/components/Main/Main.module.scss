@@ -1,0 +1,161 @@
+.Main {
+  background-color: var(--color-secondary-sacramento-green);
+  height: 1073px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+
+  .bgPattern3 {
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    transform: translateX(50%);
+  }
+
+  .header {
+    width: 64%;
+    height: 196px;
+    position: absolute;
+    left: 24px;
+    top: 64px;
+
+    .headline {
+      color: var(--color-primary-white);
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 32px;
+
+      &::before {
+        content: '';
+        display: block;
+        background-color: var(--color-primary-light-coral);
+        width: 50px;
+        height: 4px;
+        margin-bottom: 32px;
+      }
+    }
+  }
+
+  .content {
+    margin-top: 316px;
+
+    .section {
+      width: 327px;
+      height: 199px;
+      text-align: center;
+      margin: 0 auto;
+
+      &:not(:last-child) {
+        margin-bottom: 48px;
+      }
+
+      .icon {
+        height: 72px;
+        width: 72px;
+        margin-bottom: 16px;
+      }
+
+      .headline {
+        color: var(--color-primary-light-coral);
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 28px;
+        margin-bottom: 8px;
+      }
+
+      .text {
+        color: var(--color-primary-white-transparent-2);
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 25px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .Main {
+    height: 710px;
+
+    .header {
+      left: 98px;
+      top: 100px;
+
+      width: 445px;
+      height: 64px;
+
+      .headline::before {
+        margin-bottom: 36px;
+      }
+    }
+
+    .content {
+      margin-top: 264px;
+
+      .section {
+        width: 573px;
+        height: 94px;
+        text-align: initial;
+        margin: 0 auto;
+
+        display: flex;
+
+        &:not(:last-child) {
+          margin-bottom: 32px;
+        }
+
+        .icon {
+          margin-bottom: 0;
+          margin-right: 23px;
+        }
+
+        .flex {
+          .headline {
+            margin-bottom: 16px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .Main {
+    height: 684px;
+
+    .bgPattern3 {
+      bottom: 0;
+    }
+
+    .header {
+      left: 165px;
+      top: 140px;
+
+      width: 445px;
+      height: 202px;
+
+      .headline {
+        font-size: 48px;
+        line-height: 48px;
+
+        &::before {
+          margin-bottom: 54px;
+        }
+      }
+    }
+
+    .content {
+      height: 346px;
+      width: 540px;
+      margin-top: initial;
+
+      position: absolute;
+      top: 198px;
+      right: 165px;
+
+      .section {
+        width: 100%;
+      }
+    }
+  }
+}

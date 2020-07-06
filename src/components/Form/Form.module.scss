@@ -1,0 +1,47 @@
+.Form {
+  form {
+    margin-top: 64px;
+    width: 327px;
+    height: 420px;
+
+    button {
+      width: 123px;
+      height: 48px;
+      border-radius: 24px;
+      font-size: 18px;
+      line-height: 28px;
+      font-weight: 600;
+      font-family: inherit;
+      color: var(--color-secondary-jungle-green);
+      background-color: var(--color-primary-white);
+      border: var(--color-primary-white) 2px solid;
+      transition: all 0.2s ease;
+      margin-top: 20px;
+
+      &:hover {
+        border-color: var(--color-secondary-rapture-blue);
+        background-color: var(--color-secondary-rapture-blue);
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .Form {
+    form {
+      margin-top: 64px;
+      width: 540px;
+      height: 348px;
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .Form {
+    form {
+      margin-top: 20px;
+      width: 542px;
+      height: 420px;
+    }
+  }
+}

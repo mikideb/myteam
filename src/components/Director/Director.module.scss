@@ -1,0 +1,116 @@
+.Director {
+  height: 253px;
+  width: 281px;
+  margin-bottom: 52px;
+  position: relative;
+
+  .frontSide {
+    background-color: var(--color-secondary-sacramento-green);
+  }
+
+  .backSide {
+    background-color: var(--color-secondary-dark-green);
+    transition: all 0.1s ease;
+
+    .name {
+      position: absolute;
+      top: 35px;
+      left: 50%;
+      transform: translateX(-50%);
+      min-width: 151px;
+    }
+
+    .quote {
+      font-size: 15px;
+      line-height: 25px;
+      font-weight: 600;
+      color: var(--color-primary-white);
+      min-width: 234.66px;
+
+      position: absolute;
+      top: 71px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .links {
+      position: absolute;
+      bottom: 63px;
+      left: 50%;
+      transform: translateX(-50%);
+
+      width: 60px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .btn {
+      background-color: var(--color-secondary-rapture-blue);
+      transition: all 0.2s ease-in;
+
+      img {
+        transform: rotate(-45deg);
+        transition: all 0.2s ease-in;
+      }
+    }
+  }
+
+  .frontSide,
+  .backSide {
+    height: 100%;
+    width: 100%;
+  }
+
+  .image {
+    height: 96px;
+    width: 96px;
+    box-sizing: initial;
+    border: var(--border-image);
+    border-radius: 50%;
+    margin-top: 32px;
+    margin-bottom: 16px;
+  }
+
+  .name {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 700;
+    color: var(--color-secondary-rapture-blue);
+  }
+
+  .title {
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: 500;
+    color: var(--color-primary-white);
+  }
+
+  .btn {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background-color: var(--color-primary-light-coral);
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+
+    img {
+      transform: rotate(0);
+      transition: all 0.2s ease-in;
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .Director {
+    width: 350px;
+  }
+}

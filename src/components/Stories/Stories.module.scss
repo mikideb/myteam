@@ -1,0 +1,153 @@
+.Stories {
+  background-color: var(--color-secondary-jungle-green);
+  width: 100%;
+  height: 1410px;
+  text-align: center;
+  position: relative;
+
+  .patternTop {
+    position: absolute;
+    left: 0;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 1106px;
+    width: 327px;
+
+    position: absolute;
+    top: 140px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    .header {
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 32px;
+      color: var(--color-primary-white);
+      max-width: 327px;
+
+      & > span {
+        color: var(--color-secondary-rapture-blue);
+      }
+    }
+
+    .content {
+      width: 100%;
+      margin-top: 48px;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .story {
+        &:not(:last-child) {
+          margin-bottom: 48px;
+        }
+
+        .quotes {
+          width: 67px;
+          height: 56px;
+          z-index: -1;
+        }
+
+        .text {
+          font-size: 15px;
+          font-weight: 600;
+          line-height: 25px;
+          color: var(--color-primary-white);
+          z-index: 1;
+          margin-top: -23px;
+          margin-bottom: 16px;
+        }
+
+        .name {
+          font-size: 18px;
+          font-weight: 700;
+          line-height: 28px;
+          color: var(--color-secondary-rapture-blue);
+          margin-bottom: 2px;
+        }
+
+        .title {
+          font-size: 13px;
+          font-weight: 500;
+          line-height: 18px;
+          color: var(--color-primary-white);
+          margin-bottom: 16px;
+        }
+
+        .img {
+          height: 62px;
+          width: 62px;
+          border-radius: 50%;
+          box-sizing: initial;
+          border: var(--border-image);
+        }
+      }
+    }
+  }
+
+  .patternBottom {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .Stories {
+    height: 1199px;
+
+    .container {
+      height: 999px;
+      width: 573px;
+
+      top: 100px;
+
+      .header {
+        max-width: 451px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .Stories {
+    height: 745px;
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 465px;
+      width: 1110px;
+
+      .header {
+        font-size: 48px;
+        line-height: 48px;
+        max-width: 932px;
+      }
+
+      .content {
+        width: 100%;
+        margin-top: 56px;
+
+        flex-direction: row;
+        align-items: flex-start;
+
+        .story {
+          .text {
+            margin-bottom: 24px;
+          }
+
+          .title {
+            margin-bottom: 32px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,129 @@
+.Header {
+  height: 567px;
+  width: 100%;
+  background-color: var(--color-primary-midnight-green);
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+
+  .bgPatternHome {
+    display: none;
+  }
+
+  .content {
+    position: absolute;
+    top: 160px;
+    text-align: center;
+    width: 327px;
+    height: 210px;
+    margin: 0 auto;
+    color: var(--color-primary-white);
+
+    .headline {
+      color: inherit;
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 40px;
+      margin-bottom: 18px;
+
+      & > span {
+        color: var(--color-primary-light-coral);
+      }
+    }
+
+    .text {
+      color: inherit;
+      font-size: 15px;
+      font-weight: 600;
+      line-height: 28px;
+    }
+  }
+
+  .bgPattern2 {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .Header {
+    height: 700px;
+
+    .content {
+      top: 224px;
+      width: 683px;
+      height: 220px;
+
+      .headline {
+        font-size: 64px;
+        line-height: 56px;
+        margin-bottom: 24px;
+      }
+
+      .text {
+        width: 457px;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .Header {
+    .bgPatternHome {
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 250px;
+      margin-left: -100px;
+    }
+
+    .content {
+      top: 250px;
+      width: 1110px;
+      height: 220px;
+      text-align: initial;
+
+      display: grid;
+      grid-template-rows: 200px;
+      grid-template-columns: 635px 445px;
+      grid-column-gap: 30px;
+
+      .headline {
+        font-size: 100px;
+        line-height: 100px;
+        margin-bottom: 0;
+      }
+
+      .text {
+        width: 445px;
+        height: 112px;
+        font-size: 18px;
+        grid-column: 2 / 3;
+        align-self: end;
+
+        &::before {
+          content: '';
+          display: block;
+          background-color: var(--color-secondary-rapture-blue);
+          height: 4px;
+          width: 50px;
+
+          position: absolute;
+          top: 0;
+        }
+      }
+    }
+
+    .bgPattern2 {
+      position: absolute;
+      bottom: 0;
+      left: initial;
+      transform: none;
+      right: 165px;
+    }
+  }
+}
